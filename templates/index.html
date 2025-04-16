@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery with AI Captions</title>
+    <title>Image and AI Captions</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
     <style>
         body {
@@ -51,14 +51,12 @@
         .upload-section {
             background: #fff;
             padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            border: 2px dashed #8bc34a; /* A lighter, more vibrant green */
+            border-radius: 18px;
             text-align: left; /* Align content to the left within the section */
         }
 
         .upload-section h2 {
-            color: #4caf50;
+            color: black;
             font-weight: 500;
             margin-top: 0;
             margin-bottom: 15px;
@@ -97,7 +95,7 @@
         }
 
         .image-gallery-section h2 {
-            color: #4caf50;
+            color: black;
             font-weight: 500;
             margin-top: 0;
             margin-bottom: 15px;
@@ -115,14 +113,10 @@
             padding: 15px;
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-            border-left: 5px solid #4caf50;
+            
         }
 
-        .image-item:hover {
-            transform: translateY(-3px); /* Less lift for smaller items */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
+        
 
         .image-item img {
             width: 100%;
@@ -188,7 +182,7 @@
         </div>
 
         <div class="image-gallery-section">
-            <h2>Uploaded Images</h2>
+            <h2>Uploaded Data</h2>
             <div id="image-gallery">
                 {% if images %}
                     {% for image_url in images %}
